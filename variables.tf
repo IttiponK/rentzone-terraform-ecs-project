@@ -64,3 +64,40 @@ variable "ssh_location" {
     type        = string
     
 }
+
+# rds variables 
+variable "database_snapshot_identifier" {
+    description = "database snapshot name"
+    type        = string
+    
+}
+
+variable "database_instance_class" {
+    description = "database instance type"
+    type        = string
+    
+}
+
+variable "database_instance_identifier" {
+    description = "database instance identifier"
+    type        = string
+    
+}
+
+variable "multi_az_deployment" {
+    description = "create a stanby db instance"
+    type        = bool
+    
+}
+
+variable "db_user_name" {
+    description = "database username"
+    type        = string
+    
+}
+
+variable "db_password" {
+    description = "database username"
+    type        = string
+    
+}
